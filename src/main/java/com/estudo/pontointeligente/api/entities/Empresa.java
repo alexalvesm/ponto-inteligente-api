@@ -99,6 +99,10 @@ public class Empresa implements Serializable {
 		return new Empresa(razaoSocial, cnpj);
 	}
 	
+	public static Empresa of() {
+		return new Empresa();
+	}
+	
 	@PreUpdate
     public void preUpdate() {
         dataAtualizacao = new Date();

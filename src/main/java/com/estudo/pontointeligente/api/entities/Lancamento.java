@@ -126,6 +126,10 @@ public class Lancamento implements Serializable {
         dataCriacao = atual;
         dataAtualizacao = atual;
     }
+    
+    public static Lancamento of() {
+    	return new Lancamento();
+    }
 
 	@Override
 	public String toString() {

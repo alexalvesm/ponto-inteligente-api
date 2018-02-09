@@ -6,8 +6,8 @@ import com.estudo.pontointeligente.api.entities.Empresa;
 
 public interface EmpresaService {
 
-	Optional<Empresa> buscarPorCnpj(String cnpj);
+	Optional<Empresa> buscarPorCnpj(final String cnpj);
 	
-	Empresa persistir(Empresa empresa);
+	Empresa persistir(final Empresa empresa);
 	
 }

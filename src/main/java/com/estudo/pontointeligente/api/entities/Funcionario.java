@@ -195,6 +195,10 @@ public class Funcionario implements Serializable {
         dataCriacao = atual;
         dataAtualizacao = atual;
     }
+    
+    public static Funcionario of() {
+    	return new Funcionario();
+    }
 
 	@Override
 	public String toString() {
